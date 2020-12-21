@@ -1,0 +1,67 @@
+doctype html
+html
+    head
+        style
+            include ../static/style.css
+      
+    body
+        nav#navbar
+            
+            
+            ul
+                div#logo
+                    img(src="/static/logo.png")
+                    | DDA
+            
+                
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class Info]
+                li #[a(href="/contact") Contact Us]
+                <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+        section#introSection
+            | Welcome to Darshan Dance Academy
+            .small
+                | Eat Sleep Dance Repeat
+        section#missionSection
+
+            h2 Our Mission
+            div.card
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img
+                        img(src="/static/1.png")
+                    div.card-content
+                        p This is the best dance academy of the universe
+
+            div.card 
+                h3 Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src="/static/2.png")
+                    div.card-content
+                        p This is the best dance academy of the universe
+
+            div.card
+                h3 Expert Teaching
+                div.card-box
+                    div.card-img
+                        img(src="/static/3.png")
+                    div.card-content
+                        p This is the best dance academy of the universe
+        section#sponserSection
+            h2 Our Sponsers
+            div#sponser
+                img(src="/static/logo1.png", alt="Sponser Image",class="spImage",class="spImage1")
+                img(src="/static/logo2.png", alt="Sponser Image",class="spImage")
+                img(src="/static/logo3.png", alt="Sponser Image",class="spImage")
+                img(src="/static/logo4.png", alt="Sponser Image",class="spImage")
+        footer#footer
+            | Copyright &#169 2020 DarshanDanceAcademy.com | All Rights Reserved
+        
+        script
+            include ../static/index.js

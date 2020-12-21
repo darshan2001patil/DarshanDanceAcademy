@@ -1,0 +1,52 @@
+
+extends base.pug
+
+block scripts
+  script(src='/index.js')
+
+block style
+    style
+        include ../static/style.css
+        <link rel="stylesheet" media="screen and (min-device-width: 1440px)" href="desktop-style.css" />
+        <link rel='stylesheet' media='screen and (min-width: 800px) and (max-width: 1439px)' href='medium-style.css' />
+        <link rel='stylesheet' media='screen and (min-width: 100px) and (max-width: 799px)' href='mobile-style.css' />
+        
+block content
+    
+    section#introSection
+        | Welcome to Darshan Dance Academy
+        .small
+            | Eat Sleep Dance Repeat
+    section#missionSection
+
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/1.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card 
+            h3 Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src="/static/2.png")
+                    div.card-content
+                        p This is the best dance academy of the universe
+
+        div.card
+            h3 Expert Teaching
+              div.card-box
+                  div.card-img
+                      img(src="/static/3.png")
+                  div.card-content
+                      p This is the best dance academy of the universe
+    section#sponserSection
+        h2 Our Sponsers
+        div#sponser
+            img(src="/static/logo1.png", alt="Sponser Image",class="spImage",class="spImage1")
+            img(src="/static/logo2.png", alt="Sponser Image",class="spImage")
+            img(src="/static/logo3.png", alt="Sponser Image",class="spImage")
+            img(src="/static/logo4.png", alt="Sponser Image",class="spImage")

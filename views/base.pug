@@ -1,0 +1,33 @@
+
+doctype html
+html
+  head
+    
+    title Darshan Dance Academy
+    block scripts
+    
+    block style
+  body
+    nav#navbar
+          ul  
+              div#logo
+                  img(src="/static/logo.png")
+                  | DDA
+            
+                
+              li #[a(href="/") Home]
+              li #[a(href="/") About]
+              li #[a(href="/") Services]
+              li #[a(href="/") Class Info]
+              li #[a(href="/contact") Contact Us]
+              <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+    block content
+      
+    footer#footer
+      | Copyright &#169 2020 DarshanDanceAcademy.com | All Rights Reserved
+
+    
+      
